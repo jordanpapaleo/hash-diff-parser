@@ -27,16 +27,15 @@ const IndexPage = () => {
     console.log(err)
   }
 
-  console.log('formattedOutput', formattedOutput)
   const style = {
     minHeight: 200,
     border: '1px solid gray',
     padding: 20,
   }
+
   return (
     <Layout>
       <div style={{display: 'grid', gridTemplateColumns: '1fr', gridGap: 20, padding: 20}}>
-        <p>Takes output from our tests and turns it into readable json</p>
         <textarea
           placeholder="Paste Hash Diff here"
           onChange={handleChange}
